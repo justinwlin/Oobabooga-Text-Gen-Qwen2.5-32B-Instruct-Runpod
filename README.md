@@ -61,7 +61,7 @@ After changing these variables, redeploy your pod or serverless endpoint.
 ### Example Input (for handler.py or direct API call)
 ```json
 {
-  "model": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+  "model": "Qwen2.5-32B-Instruct-Q4_K_M.gguf",
   "prompt": "Write a short story about a robot learning to love.",
   "max_tokens": 100,
   "temperature": 0.7
