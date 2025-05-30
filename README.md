@@ -54,6 +54,11 @@ After changing these variables, redeploy your pod or serverless endpoint.
 - `max_tokens`: (Optional) Maximum number of tokens to generate
 - `temperature`: (Optional) Sampling temperature
 
+#### Note:
+The input is passed along to the OpenAI compatible server that Text Gen Web UI spins up. So theoretically any parameters supported by OpenAI compatible API endpoint should work. You can modify the handler.py further for any additional functionality you need.
+
+Read more on [text generation web UI wiki](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API)
+
 ### Why Use a Prebaked Model?
 
 Using a prebaked model (one that is downloaded and set up during the image build) offers significant advantages:
