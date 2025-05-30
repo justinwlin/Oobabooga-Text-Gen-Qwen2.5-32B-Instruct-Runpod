@@ -2,6 +2,17 @@
 
 This project provides a Dockerized oobabooga text generation server, ready for deployment on Runpod with serverless support (or even Pod support). It exposes an OpenAI-compatible API endpoint on port 5000, making it easy to integrate with existing OpenAI API clients.
 
+# Variants:
+There exists two variants of this project:
+**Qwen 2.5 7B Instruct**
+Smaller variant of the Qwen 2.5 LLM model. 
+https://github.com/justinwlin/Oobabooga-Text-Gen-Qwen2.5-7B-Instruct-Runpod
+
+
+**Qwen 2.5 32B Instruct**
+Larger variant of the Qwen 2.5 LLM model.
+https://github.com/justinwlin/Oobabooga-Text-Gen-Qwen2.5-32B-Instruct-Runpod
+
 ## Features
 - Dockerfile for oobabooga/text-generation-webui
 - Runpod serverless compatibility

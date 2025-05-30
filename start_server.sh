@@ -3,14 +3,19 @@ echo "Starting text-generation-webui server with official launcher..."
 echo ""
 echo "Web UI will be available at: http://localhost:7860"
 echo "API will be available at: http://localhost:5000"
+echo "Using model: $MODEL_FILE"
 echo ""
 
 # Navigate to the correct directory
 cd /app/text-generation-webui
 
-# Use the official launcher
+# Reset environment variables that prevent launching
+unset LAUNCH_AFTER_INSTALL
+export GPU_CHOICE="A"
+
+# Use the official launcher with environment variable
 bash start_linux.sh \
-    --model "Qwen2.5-7B-Instruct-Q4_K_M.gguf" \
+    --model "$MODEL_FILE" \
     --api \
     --listen \
     --listen-host 0.0.0.0 \
